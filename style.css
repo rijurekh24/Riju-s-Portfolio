@@ -1,0 +1,126 @@
+.navbar{
+    background-color: #1C3747  !important;
+}
+
+.navpad{
+    position: sticky;
+    top: 0;
+}
+
+.navbar-brand{
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px !important;
+}
+
+.navbar-nav li a{
+    color: white !important;
+    font-weight: bolder;
+    font-size: 17px;
+
+}
+
+.navbar-nav{
+    padding-right: 230px;
+}
+
+.nav-item{
+    margin-right: 20%;
+}   
+
+h1{
+    font-size: 57px !important;
+    font-weight: bold !important;
+}   
+.college-logo{
+    margin-top: 2%;
+    width: 950px !important;
+    height: auto !important;
+}
+
+button{
+    margin-top: 6% !important;
+    width: 140px !important;
+    height: 45px !important;
+    background-color: #4070F4 !important;
+    font-weight:bold;
+}
+
+button:hover{ 
+    transition-duration: 0.5s;
+    background-color: rgb(14, 25, 117) !important;
+    border: none;
+}
+/* 
+.leetcode{
+    margin-top: -2.5%;
+    width: 35px !important;
+} */
+
+svg{
+    width: 32px !important;
+}
+/* .para:hover{
+    fill: #4070F4 !important;
+    transition-duration: 0.5s;
+    color: #4070F4;
+} */
+.para a:link{
+    text-decoration: none;
+}
+
+.para a:visited{
+    text-decoration: none;
+}
+.para a:hover{
+    fill: #4070F4 !important;
+    transition-duration: 0.5s;
+    color: #4070F4;
+}
+
+.para p{
+    font-size: 20px;
+}
+
+
+.intro{
+    display: inline;
+    color: #4070F4;
+    text-decoration: underline;
+    font-size: 35px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.img-fluid{
+    width: 280px;
+}
+
+/* .profile{
+    position: absolute;
+    left: 25%;
+} */
+
+.skillss {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+}
+
+.skills__skill {
+    padding: 1% 2%;
+    margin-bottom: 2%;
+    margin-right: 4%;
+    font-size: 25px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #545454;
+}
+.para a{
+    color: black;
+}
+
