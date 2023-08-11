@@ -1,83 +1,202 @@
-//navbar color
-var navbar = document.getElementById('navbar');
+html, body {
+    overflow-x:hidden 
+  } 
 
-document.addEventListener("scroll", () => {
-    if (window.scrollY > 0) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
+.navbar {
 
+    background: transparent;
+    position: sticky;
+    top: 0;
+    color: white;
+    transition: background-color 0.5s;
 
-//multiple text
-const text = document.querySelector(".multiple-text");
-const textLoad = () => {
-    setTimeout(() => {
-        text.textContent = "Front-end Web Developer";
-    }, 0);
-    setTimeout(() => {
-        text.textContent = "UI/UX Designer";
-    }, 1500);
-    setTimeout(() => {
-        text.textContent = "Photographer";
-    }, 3000);
 }
-textLoad();
-setInterval(textLoad, 4500);
 
 
-//skill animation
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            observer.unobserve(entry.target);
-            var percentVal = 0;
-            var finalVal = parseInt(entry.target.getAttribute('aria-valuenow'));
-            console.log(percentVal);
+.navbar.scrolled {
+    background: rgba(247, 247, 247, 0.3);
+    color: black;
+    backdrop-filter: blur(8px);
 
-            setInterval(function () {
-                if (percentVal < finalVal) {
-                    percentVal += 0.7;
-                    entry.target.style.width = percentVal + '%';
-                    entry.target.setAttribute('aria-valuenow', percentVal);
-                }
-            }, 0.1);
-        }
-    });
-}, {
-    root: null,
-    rootMargin: '0px',
-    threshold: 1
-});
-
-const targets = document.querySelectorAll('.progress-bar');
-targets.forEach(target => observer.observe(target));
+}
 
 
+.nav-item a {
+    font-weight: 600;
+    padding: 0px 18px !important;
+    border-radius: 25px;
+    color: inherit !important;
+    font-size: 13px !important;
+    float: right;
 
-//hide navbar
+}
 
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-// var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("navbar").style.top = "0px";
-//   } else {
-//     document.getElementById("navbar").style.top = "0px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
+.nav-item a:hover {
+    color: #48B14D !important;
+
+    border-radius: 25px;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.navbar-brand {
+    font-size: 22px !important;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: inherit !important;
+}
+
+.image-intro {
+    width: 300px;
+    backdrop-filter: blur(100px);
+    border-radius: 15px;
+
+}
+
+.intro {
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1506452305024-9d3f02d1c9b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+    z-index: -1;
+    background-position: bottom;
+
+}
 
 
-ScrollReveal({
-    reset: true,
-    distance: '90px',
-    duration: 1500,
-    delay: 200
-});
+.img-about {
+    /* width: 250px; */
+    aspect-ratio: 1;
+    width: 70%;
+    border-radius: 10px;
+}
 
-ScrollReveal().reveal('.header-img,.project-title,.service-title,.description-about,.skills-title,.contact-title', { origin: 'top' });
-ScrollReveal().reveal('.img-about,.h6-head,.description-hire-button,.email', { origin: 'right' });
-ScrollReveal().reveal('.prjct,.srvc,.text', { origin: 'bottom' });
-ScrollReveal().reveal('.h1-head,.description-hire,.name', { origin: 'left' });
+.header-img {
+    width: 160px;
+    border-radius: 50%;
+    border: 5px solid white;
+
+}
+
+.fa-angle-down {
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+
+.fa-brands:hover {
+    color: #48B14D;
+    /* transition: 0.4s; */
+    transform: scale(1.5);
+}
+
+.fa-brands {
+    transition: 0.4s;
+
+}
+
+.btn:hover {
+    background-color: #48B14D !important;
+    transform: scale(1.1);
+
+}
+
+.btn {
+    transition: 0.4s !important;
+}
+
+.progress {
+    height: 6px !important;
+    background-color: rgb(104, 104, 104) !important;
+}
+
+.progress-bar {
+    background-color: #48B14D !important;
+}
+
+
+#skills {
+    background-color: #F2F2F2;
+}
+
+.prjct {
+
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 1000/620 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* box-shadow: 3px 3px black,
+                -3px 3px  black,
+                3px -3px  black,
+                -3px -3px  black; */
+    border: 2px solid gray;
+    cursor: pointer;
+
+}
+
+
+.prjct img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+  
+}
+
+.prjct .child {
+    aspect-ratio: 1000/620;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.5);
+    color: white;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scale: 0;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+   
+
+}
+
+.prjct:hover .child {
+    scale: 1;
+    opacity: 1;
+}
+
+
+
+#contact,
+#hire {
+    background-color: #F2F2F2;
+}
+
+#hire .btn {
+    width: 160px;
+    height: 60px;
+
+}
+
+.arrow {
+    animation: slide 0.9s ease-in-out infinite;
+}
+
+@keyframes slide {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0px, 10px);
+    }
+}
