@@ -1,3 +1,7 @@
+html, body {
+    overflow-x:hidden 
+  } 
+
 .navbar {
 
     background: transparent;
@@ -62,7 +66,9 @@
 
 
 .img-about {
-    width: 250px;
+    /* width: 250px; */
+    aspect-ratio: 1;
+    width: 70%;
     border-radius: 10px;
 }
 
@@ -118,11 +124,17 @@
     background-color: black;
     position: relative;
     z-index: 1;
-    aspect-ratio: 16/9;
+    aspect-ratio: 1000/620 ;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    /* box-shadow: 3px 3px black,
+                -3px 3px  black,
+                3px -3px  black,
+                -3px -3px  black; */
+    border: 2px solid gray;
+    cursor: pointer;
 
 }
 
@@ -135,12 +147,15 @@
     left: 0;
     object-fit: cover;
     z-index: -1;
+  
 }
 
 .prjct .child {
-    aspect-ratio: 16/9;
+    aspect-ratio: 1000/620;
     height: 100%;
-    background-color: white;
+    background-color: rgb(0, 0, 0,0.5);
+    color: white;
+    backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,6 +163,7 @@
     scale: 0;
     transition: 0.4s ease-in-out;
     opacity: 0;
+   
 
 }
 
