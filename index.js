@@ -38,7 +38,7 @@ const observer = new IntersectionObserver((entries) => {
 
             setInterval(function () {
                 if (percentVal < finalVal) {
-                    percentVal += 1;
+                    percentVal += 0.7;
                     entry.target.style.width = percentVal + '%';
                     entry.target.setAttribute('aria-valuenow', percentVal);
                 }
@@ -72,13 +72,12 @@ targets.forEach(target => observer.observe(target));
 
 ScrollReveal({
     reset: true,
-    distance: '80px',
-    duration: 2000,
+    distance: '90px',
+    duration: 1500,
     delay: 200
 });
 
-ScrollReveal().reveal('.header-img,.project-title,.service-title', { origin: 'top' });
-ScrollReveal().reveal('.img-about,.h6-head,.description-hire-button', { origin: 'right' });
-ScrollReveal().reveal('.description-about', { origin: 'top' });
-ScrollReveal().reveal('.prjct,.srvc', { origin: 'bottom' });
-ScrollReveal().reveal('.h1-head,.description-hire', { origin: 'left' });
+ScrollReveal().reveal('.header-img,.project-title,.service-title,.description-about,.skills-title,.contact-title', { origin: 'top' });
+ScrollReveal().reveal('.img-about,.h6-head,.description-hire-button,.email', { origin: 'right' });
+ScrollReveal().reveal('.prjct,.srvc,.text', { origin: 'bottom' });
+ScrollReveal().reveal('.h1-head,.description-hire,.name', { origin: 'left' });
