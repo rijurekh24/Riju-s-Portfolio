@@ -111,5 +111,5 @@ ScrollReveal().reveal('.srvc', { interval: 150 });
 
 ScrollReveal().reveal('.hire-description', { delay: 300});
 
-ScrollReveal().reveal('.fa-brands', { origin:'bottom',delay:500,interval: 200,distance:'30px'});
+ScrollReveal().reveal('.fa-brands', { origin:'bottom',delay:500,interval: 160,distance:'30px'});
 ScrollReveal().reveal('.h1-head,.h6-head,.header-img', { reset: false});
