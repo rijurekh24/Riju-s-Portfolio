@@ -1,3 +1,4 @@
+
 //navbar color
 var navbar = document.getElementById('navbar');
 
@@ -42,7 +43,7 @@ const observer = new IntersectionObserver((entries) => {
                     entry.target.style.width = percentVal + '%';
                     entry.target.setAttribute('aria-valuenow', percentVal);
                 }
-            }, 0.1);
+            }, 0.5);
         }
     });
 }, {
@@ -55,21 +56,7 @@ const targets = document.querySelectorAll('.progress-bar');
 targets.forEach(target => observer.observe(target));
 
 
-
-//hide navbar
-
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-// var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("navbar").style.top = "0px";
-//   } else {
-//     document.getElementById("navbar").style.top = "0px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
-
-
+//scroll animation
 ScrollReveal({
     reset: true,
     distance: '90px',
