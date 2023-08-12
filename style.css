@@ -1,6 +1,8 @@
-html, body {
-    overflow-x:hidden 
-  } 
+html,
+body {
+    overflow-x: hidden
+}
+
 
 
 .navbar {
@@ -10,16 +12,17 @@ html, body {
     top: 0;
     color: white;
     transition: background-color 0.5s;
-
+    
 }
 
-.fa-bars{
+.fa-bars {
     color: #686868;
 }
 
 
+
 .navbar.scrolled {
-    background: rgba(247, 247, 247, 0.3);
+    background: rgba(48, 47, 47, 0.3);
     color: black;
     backdrop-filter: blur(8px);
 
@@ -35,6 +38,7 @@ html, body {
     float: right;
 }
 
+/* .nav-item a.active, */
 .nav-item a:hover {
     color: #48B14D !important;
 
@@ -44,18 +48,19 @@ html, body {
 }
 
 @media only screen and (max-width: 996px) {
-    .nav-item a{
-     padding: 5px !important; 
-   }
-
-   .img-about {
-    width: 90% !important;
+    .nav-item a {
+        padding: 6px !important;
     }
+
+    .img-about {
+        width: 90% !important;
+    }
+
     .navbar{
         backdrop-filter: blur(3px);
     }
- }
- 
+}
+
 
 .navbar-brand {
     font-size: 22px !important;
@@ -131,7 +136,7 @@ html, body {
 }
 
 
-#skills {
+#education {
     background-color: #F2F2F2;
 }
 
@@ -152,7 +157,7 @@ html, body {
     background-color: black;
     position: relative;
     z-index: 1;
-    aspect-ratio: 1000/620 ;
+    aspect-ratio: 1000/620;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,13 +180,13 @@ html, body {
     left: 0;
     object-fit: cover;
     z-index: -1;
-  
+
 }
 
 .prjct .child {
     aspect-ratio: 1000/620;
     height: 100%;
-    background-color: rgb(0, 0, 0,0.5);
+    background-color: rgb(0, 0, 0, 0.5);
     color: white;
     backdrop-filter: blur(9px);
     display: flex;
@@ -191,7 +196,7 @@ html, body {
     scale: 0;
     transition: 0.4s ease-in-out;
     opacity: 0;
-   
+
 
 }
 
@@ -200,21 +205,20 @@ html, body {
     opacity: 1;
 }
 
-.prjct .child a{
+.prjct .child a {
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
 
-.prjct .child a:hover{
-    color:#48B14D;
+.prjct .child a:hover {
+    color: #48B14D;
     scale: 1.05;
     transition: 0.2s;
 }
 
 
-#contact,
-#hire {
+#contact,#projects,#services {
     background-color: #F2F2F2;
 }
 
@@ -224,3 +228,18 @@ html, body {
 
 }
 
+.gallery img{
+   width: 60%;
+}
+.gallery {
+    /* width: 100%; */
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+.gallery .horizontal-gallery {
+    display: inline;
+} 
