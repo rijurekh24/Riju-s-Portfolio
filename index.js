@@ -96,7 +96,7 @@ ScrollReveal({
     reset: true,
     distance: '90px',
     duration: 1500,
-    delay: 100
+    delay: 200
 });
 
 ScrollReveal().reveal('.project-title,.service-title,.description-about,.skills-title,.contact-title,.gallery-title,.education-title,hr,.hire-title', { origin: 'top' });
@@ -106,9 +106,11 @@ ScrollReveal().reveal('.h1-head,.hire-description,.name,.gallery-about', { origi
 
 
 ScrollReveal().reveal('.header-img', { scale: 1.7});
-ScrollReveal().reveal('.prjct', { scale: 0.5});
+ScrollReveal().reveal('.prjct', { scale: 0.5,duration:1500,interval:200});
 ScrollReveal().reveal('.srvc1', { delay: 300 });
-ScrollReveal().reveal('.srvc2', { delay: 400});
-ScrollReveal().reveal('.srvc3', { delay: 500});
+ScrollReveal().reveal('.srvc2', { delay: 450});
+ScrollReveal().reveal('.srvc3', { delay: 600});
 ScrollReveal().reveal('.hire-description', { delay: 300});
 
+ScrollReveal().reveal('.fa-brands', { origin:'bottom',delay:500,interval: 200,distance:'30px'});
+ScrollReveal().reveal('.h1-head,.h6-head,.header-img', { reset: false});
