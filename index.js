@@ -94,12 +94,12 @@ targets.forEach(target => observer.observe(target));
 //scroll animation
 ScrollReveal({
     reset: true,
-    distance: '100px',
+    distance: '90px',
     duration: 1800,
     delay: 100
 });
 
-ScrollReveal().reveal('.header-img,.project-title,.service-title,.description-about,.skills-title,.contact-title,.gallery-title,.education-title', { origin: 'top' });
+ScrollReveal().reveal('.header-img,.project-title,.service-title,.description-about,.skills-title,.contact-title,.gallery-title,.education-title,hr', { origin: 'top' });
 ScrollReveal().reveal('.img-about,.h6-head,.description-hire-button,.email,.gallery-img', { origin: 'right' });
 ScrollReveal().reveal('.prjct,.srvc,.text,.edc', { origin: 'bottom' });
 ScrollReveal().reveal('.h1-head,.description-hire,.name,.gallery-about', { origin: 'left' });
