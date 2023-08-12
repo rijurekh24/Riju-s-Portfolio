@@ -15,7 +15,24 @@ btn.onclick=function()
     }
 }
 
+//navbar active
+// let sections=document.querySelectorAll('section');
+// let navLinks=document.querySelectorAll('.navbar-nav .nav-item a');
+// window.onscroll = () => {
+//     sections.forEach(sec => {
+//         let top=window.scrollY;
+//         let offset=sec.offsetTop;
+//         let height=sec.offsetHeight;
+//         let id=sec.getAttribute('id');
 
+//         if(top >= offset && top < offset + height){
+//             navLinks.forEach(links =>{
+//                 links.classList.remove('active');
+//                 document.querySelector('.navbar-nav .nav-item a[href*=' + id + ']').classList.add('active');
+//             })
+//         }
+//     });
+// };
 
 //navbar color
 var navbar = document.getElementById('navbar');
