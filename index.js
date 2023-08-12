@@ -99,7 +99,7 @@ ScrollReveal({
     delay: 100
 });
 
-ScrollReveal().reveal('.header-img,.project-title,.service-title,.description-about,.skills-title,.contact-title,.gallery-title,.education-title,hr', { origin: 'top' });
+ScrollReveal().reveal('.header-img,.project-title,.service-title,.description-about,.skills-title,.contact-title,.gallery-title,.education-title,hr,.hire-title', { origin: 'top' });
 ScrollReveal().reveal('.img-about,.h6-head,.description-hire-button,.email,.gallery-img', { origin: 'right' });
 ScrollReveal().reveal('.prjct,.srvc,.text,.edc', { origin: 'bottom' });
-ScrollReveal().reveal('.h1-head,.description-hire,.name,.gallery-about', { origin: 'left' });
+ScrollReveal().reveal('.h1-head,.hire-description,.name,.gallery-about', { origin: 'left' });
