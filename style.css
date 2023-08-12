@@ -31,8 +31,7 @@ body {
 
 .nav-item a {
     font-weight: 600;
-    padding: 0px 18px !important;
-    border-radius: 25px;
+    padding: 0px 25px !important;
     color: inherit !important;
     font-size: 13px !important;
     float: right;
@@ -49,7 +48,7 @@ body {
 
 @media only screen and (max-width: 996px) {
     .nav-item a {
-        padding: 6px !important;
+        padding: 7px !important;
     }
 
     .img-about {
@@ -243,3 +242,7 @@ body {
 .gallery .horizontal-gallery {
     display: inline;
 } 
+
+#education h2,#skills h2 ,#contact h2,#hire h2,#services h2,#projects h2,#gallery h1{
+    letter-spacing: 3px;
+}
