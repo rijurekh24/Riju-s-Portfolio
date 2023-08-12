@@ -16,6 +16,7 @@ btn.onclick=function()
 }
 
 
+
 //navbar color
 var navbar = document.getElementById('navbar');
 
@@ -76,12 +77,12 @@ targets.forEach(target => observer.observe(target));
 //scroll animation
 ScrollReveal({
     reset: true,
-    distance: '90px',
-    duration: 1500,
-    delay: 200
+    distance: '100px',
+    duration: 1800,
+    delay: 100
 });
 
-ScrollReveal().reveal('.header-img,.project-title,.service-title,.description-about,.skills-title,.contact-title', { origin: 'top' });
-ScrollReveal().reveal('.img-about,.h6-head,.description-hire-button,.email', { origin: 'right' });
-ScrollReveal().reveal('.prjct,.srvc,.text', { origin: 'bottom' });
-ScrollReveal().reveal('.h1-head,.description-hire,.name', { origin: 'left' });
+ScrollReveal().reveal('.header-img,.project-title,.service-title,.description-about,.skills-title,.contact-title,.gallery-title,.education-title', { origin: 'top' });
+ScrollReveal().reveal('.img-about,.h6-head,.description-hire-button,.email,.gallery-img', { origin: 'right' });
+ScrollReveal().reveal('.prjct,.srvc,.text,.edc', { origin: 'bottom' });
+ScrollReveal().reveal('.h1-head,.description-hire,.name,.gallery-about', { origin: 'left' });
