@@ -51,6 +51,9 @@ html, body {
    .img-about {
     width: 90% !important;
     }
+    .navbar{
+        backdrop-filter: blur(3px);
+    }
  }
  
 
