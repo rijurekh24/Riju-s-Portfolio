@@ -15,24 +15,6 @@ btn.onclick=function()
     }
 }
 
-//navbar active
-// let sections=document.querySelectorAll('section');
-// let navLinks=document.querySelectorAll('.navbar-nav .nav-item a');
-// window.onscroll = () => {
-//     sections.forEach(sec => {
-//         let top=window.scrollY;
-//         let offset=sec.offsetTop;
-//         let height=sec.offsetHeight;
-//         let id=sec.getAttribute('id');
-
-//         if(top >= offset && top < offset + height){
-//             navLinks.forEach(links =>{
-//                 links.classList.remove('active');
-//                 document.querySelector('.navbar-nav .nav-item a[href*=' + id + ']').classList.add('active');
-//             })
-//         }
-//     });
-// };
 
 //navbar color
 var navbar = document.getElementById('navbar');
@@ -103,3 +85,7 @@ ScrollReveal().reveal('.header-img,.project-title,.service-title,.description-ab
 ScrollReveal().reveal('.img-about,.h6-head,.description-hire-button,.email,.gallery-img', { origin: 'right' });
 ScrollReveal().reveal('.prjct,.srvc,.text,.edc', { origin: 'bottom' });
 ScrollReveal().reveal('.h1-head,.hire-description,.name,.gallery-about', { origin: 'left' });
+
+
+ScrollReveal().reveal('.header-img', { scale: 0.4});
+ScrollReveal().reveal('.img-about', { scale: 0.7});
