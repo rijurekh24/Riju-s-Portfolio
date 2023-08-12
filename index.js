@@ -15,6 +15,24 @@ btn.onclick=function()
     }
 }
 
+//navbar active
+// let sections=document.querySelectorAll('section');
+// let navLinks=document.querySelectorAll('.navbar-nav .nav-item a');
+// window.onscroll = () => {
+//     sections.forEach(sec => {
+//         let top=window.scrollY;
+//         let offset=sec.offsetTop;
+//         let height=sec.offsetHeight;
+//         let id=sec.getAttribute('id');
+
+//         if(top >= offset && top < offset + height){
+//             navLinks.forEach(links =>{
+//                 links.classList.remove('active');
+//                 document.querySelector('.navbar-nav .nav-item a[href*=' + id + ']').classList.add('active');
+//             })
+//         }
+//     });
+// };
 
 //navbar color
 var navbar = document.getElementById('navbar');
@@ -77,15 +95,20 @@ targets.forEach(target => observer.observe(target));
 ScrollReveal({
     reset: true,
     distance: '90px',
-    duration: 1800,
+    duration: 1500,
     delay: 100
 });
 
-ScrollReveal().reveal('.header-img,.project-title,.service-title,.description-about,.skills-title,.contact-title,.gallery-title,.education-title,hr,.hire-title', { origin: 'top' });
+ScrollReveal().reveal('.project-title,.service-title,.description-about,.skills-title,.contact-title,.gallery-title,.education-title,hr,.hire-title', { origin: 'top' });
 ScrollReveal().reveal('.img-about,.h6-head,.description-hire-button,.email,.gallery-img', { origin: 'right' });
-ScrollReveal().reveal('.prjct,.srvc,.text,.edc', { origin: 'bottom' });
+ScrollReveal().reveal('.srvc,.text,.edc', { origin: 'bottom' });
 ScrollReveal().reveal('.h1-head,.hire-description,.name,.gallery-about', { origin: 'left' });
 
 
-ScrollReveal().reveal('.header-img', { scale: 0.4});
-ScrollReveal().reveal('.img-about', { scale: 0.7});
+ScrollReveal().reveal('.header-img', { scale: 1.7});
+ScrollReveal().reveal('.prjct', { scale: 0.5});
+ScrollReveal().reveal('.srvc1', { delay: 300 });
+ScrollReveal().reveal('.srvc2', { delay: 400});
+ScrollReveal().reveal('.srvc3', { delay: 500});
+ScrollReveal().reveal('.hire-description', { delay: 300});
+
