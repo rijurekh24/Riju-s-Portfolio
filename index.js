@@ -1,4 +1,21 @@
 
+//hamburger sign
+
+let btn=document.querySelector('.navbar-toggler');
+let icon=btn.querySelector('.fa-bars');
+
+btn.onclick=function()
+{
+    if(icon.classList.contains("fa-bars"))
+    {
+        icon.classList.replace("fa-bars","fa-xmark");
+    }
+    else{
+        icon.classList.replace("fa-xmark","fa-bars");
+    }
+}
+
+
 //navbar color
 var navbar = document.getElementById('navbar');
 
