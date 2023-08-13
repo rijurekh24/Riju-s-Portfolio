@@ -6,7 +6,7 @@ $(window).on('load', function () {
 
     setTimeout(function () {
         $('.slide').addClass('slide-deactivate');
-    }, 3000);
+    }, 3100);
 });
 
 //entry preloader text
@@ -17,14 +17,14 @@ const entrytextLoad = () => {
     }, 0);
     setTimeout(() => {
         entry.textContent = "Sleep";
-    }, 800);
+    }, 900);
     setTimeout(() => {
         entry.textContent = "</Code>";
-    }, 1600);
+    }, 1800);
 
     setTimeout(() => {
         entry.textContent = "Repeat";
-    }, 2400);
+    }, 2700);
 
 }
 entrytextLoad();
@@ -124,7 +124,7 @@ ScrollReveal().reveal('.srvc', { interval: 150 });
 
 ScrollReveal().reveal('.hire-description', { delay: 300 });
 ScrollReveal().reveal('.fa-brands', { origin: 'bottom', delay: 500, interval: 150, distance: '30px' });
-ScrollReveal().reveal('.h1-head,.h6-head,.header-img', { delay: 2700, reset: false });
+ScrollReveal().reveal('.h1-head,.h6-head,.header-img', { delay: 2900, reset: false });
 
 
 //mode  light dark
