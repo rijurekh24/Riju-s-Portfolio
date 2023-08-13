@@ -2,13 +2,33 @@
 $(window).on('load', function () {
     setTimeout(function () {
         $('.preloader').addClass('preloader-deactivate');
-    }, 2000);
+    }, 2500);
 
     setTimeout(function () {
         $('.slide').addClass('slide-deactivate');
-    }, 2200);
+    }, 3000);
 });
 
+//entry preloader text
+const entry = document.querySelector(".entry");
+const entrytextLoad = () => {
+    setTimeout(() => {
+        entry.textContent = "Eat";
+    }, 0);
+    setTimeout(() => {
+        entry.textContent = "Sleep";
+    }, 800);
+    setTimeout(() => {
+        entry.textContent = "</Code>";
+    }, 1600);
+
+    setTimeout(() => {
+        entry.textContent = "Repeat";
+    }, 2400);
+
+}
+entrytextLoad();
+// setInterval(entrytextLoad, 4500);
 
 //hamburger sign
 
@@ -104,7 +124,7 @@ ScrollReveal().reveal('.srvc', { interval: 150 });
 
 ScrollReveal().reveal('.hire-description', { delay: 300 });
 ScrollReveal().reveal('.fa-brands', { origin: 'bottom', delay: 500, interval: 150, distance: '30px' });
-ScrollReveal().reveal('.h1-head,.h6-head,.header-img', { delay: 2250, reset: false });
+ScrollReveal().reveal('.h1-head,.h6-head,.header-img', { delay: 2700, reset: false });
 
 
 //mode  light dark
