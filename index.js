@@ -2,7 +2,7 @@
 $(window).on('load', function () {
     setTimeout(function () {
         $('.preloader').addClass('preloader-deactivate');
-    }, 2500);
+    }, 2600);
 
     setTimeout(function () {
         $('.slide').addClass('slide-deactivate');
