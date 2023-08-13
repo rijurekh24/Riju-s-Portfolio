@@ -1,28 +1,28 @@
 html,
 body {
     overflow-x: hidden
-    
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
     width: 0.6vw;
 }
 
-html::-webkit-scrollbar-thumb{
- background-color: rgb(72, 177, 77);
- border-radius: 10px;
--webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.5);
+html::-webkit-scrollbar-thumb {
+    background-color: #48b14d;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
     background-color: #cbcbcb;
-    -webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.3);
-   }
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
 .navbar {
 
     background: transparent;
@@ -30,7 +30,7 @@ html::-webkit-scrollbar-track{
     top: 0;
     color: white;
     transition: background-color 0.5s;
-    
+
 }
 
 .fa-bars {
@@ -73,7 +73,7 @@ html::-webkit-scrollbar-track{
         width: 90% !important;
     }
 
-    .navbar{
+    .navbar {
         backdrop-filter: blur(3px);
     }
 }
@@ -131,7 +131,7 @@ html::-webkit-scrollbar-track{
 
 .fa-brands:hover {
     color: #48B14D;
-    transform: scale(1.5);
+    scale: 1.5 !important;
 }
 
 
@@ -231,7 +231,9 @@ html::-webkit-scrollbar-track{
 }
 
 
-#contact,#projects,#services {
+#contact,
+#projects,
+#services {
     background-color: #F2F2F2;
 }
 
@@ -241,9 +243,10 @@ html::-webkit-scrollbar-track{
 
 }
 
-.gallery img{
-   width: 60%;
+.gallery img {
+    width: 60%;
 }
+
 .gallery {
     white-space: nowrap;
     overflow-x: scroll;
@@ -255,9 +258,59 @@ html::-webkit-scrollbar-track{
 
 .gallery .horizontal-gallery {
     display: inline;
-} 
+}
 
-#education h2,#skills h2 ,#contact h2,#hire h2,#services h2,#projects h2,#gallery h1{
+#education h2,
+#skills h2,
+#contact h2,
+#hire h2,
+#services h2,
+#projects h2,
+#gallery h1 {
     letter-spacing: 3px;
 }
 
+
+:root {
+    /* darkmode */
+    --bg-primary-dark: #272a2d;
+    --bg-secondary-dark: rgb(46, 46, 48);
+    --text-dark: white;
+    --icon-dark: white;
+    --bg-tertiary: #48B14D;
+}
+
+
+/* darkmode class */
+#about.dark,
+#skills.dark,
+#hire.dark,
+#gallery.dark,
+#FOOTER.dark {
+    background-color: var(--bg-primary-dark);
+    color: var(--text-dark);
+}
+
+
+#education.dark2,
+#services.dark2,
+#projects.dark2,
+#contact.dark2 {
+    background-color: var(--bg-secondary-dark);
+    color: var(--text-dark);
+}
+
+
+#navbar.dark {
+    color: white !important;
+}
+
+/* dark light toggle */
+
+.fa-moon {
+    color: #6e6e6e;
+}
+
+.fa-sun {
+    color: #dedede;
+}
