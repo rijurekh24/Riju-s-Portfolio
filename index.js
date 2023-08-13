@@ -2,11 +2,11 @@
 $(window).on('load', function () {
     setTimeout(function () {
         $('.preloader').addClass('preloader-deactivate');
-    }, 2400);
+    }, 2450);
 
     setTimeout(function () {
         $('.slide').addClass('slide-deactivate');
-    }, 2800);
+    }, 2900);
 });
 
 //entry preloader text
@@ -124,7 +124,7 @@ ScrollReveal().reveal('.srvc', { interval: 150 });
 
 ScrollReveal().reveal('.hire-description', { delay: 300 });
 ScrollReveal().reveal('.fa-brands', { origin: 'bottom', delay: 500, interval: 150, distance: '30px' });
-ScrollReveal().reveal('.h1-head,.h6-head,.header-img', { delay: 2700, reset: false });
+ScrollReveal().reveal('.h1-head,.h6-head,.header-img', { delay: 2820, reset: false });
 
 
 //mode  light dark
