@@ -76,6 +76,15 @@ html::-webkit-scrollbar-track {
     .navbar {
         backdrop-filter: blur(3px);
     }
+
+    .theme{
+        margin-top: 2.5%;
+    }
+
+    .fa-moon{
+        color: #808080 !important;
+        
+    }
 }
 
 
