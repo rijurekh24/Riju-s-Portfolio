@@ -140,6 +140,7 @@ var projects = document.querySelector('#projects');
 var contact = document.querySelector('#contact');
 var theme = document.querySelector('.theme');
 var icn = theme.querySelector('.fa-moon');
+const audio=new Audio();
 
 function changeTheme() {
     navbar.classList.toggle('dark');
@@ -152,7 +153,9 @@ function changeTheme() {
     services.classList.toggle('dark2')
     projects.classList.toggle('dark2')
     contact.classList.toggle('dark2')
-
+    
+    audio.src="click.wav ";
+    
     if (icn.classList.contains("fa-moon")) {
         icn.classList.replace("fa-moon", "fa-sun");
     }
