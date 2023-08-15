@@ -192,13 +192,13 @@ html::-webkit-scrollbar-track {
     position: relative;
     height: 100%;
     background-color: #48B14D !important;
-    transition: 1.5s all !important;
+    transition: 1s all !important;
     opacity: 1 !important;
 }
 
 .hp {
-    transition: 1.5s all;
-    opacity: 0;
+    transition: 1s all !important;
+    opacity: 0 !important;
     width: 0 !important;
 }
 
