@@ -91,13 +91,13 @@ const observer = new IntersectionObserver((entries) => {
 const progressBars = document.querySelectorAll('.progress-bar');
 progressBars.forEach(el=>observer.observe(el));
 
-
 //scroll animation
 ScrollReveal({
     reset: true,
-    distance: '90px',
+    distance: '95px',
     duration: 1500,
-    delay: 200
+    delay: 3000,
+    useDelay:'onload'
 });
 
 
@@ -110,9 +110,9 @@ ScrollReveal().reveal('.header-img', { scale: 1.7 });
 ScrollReveal().reveal('.prjct', { scale: 0.5, duration: 1500, interval: 200 });
 ScrollReveal().reveal('.srvc', { interval: 150 });
 
-ScrollReveal().reveal('.hire-description', { delay: 300 });
-ScrollReveal().reveal('.fa-brands', { origin: 'bottom', delay: 500, interval: 150, distance: '30px' });
-ScrollReveal().reveal('.h1-head,.h6-head,.header-img', { delay: 2900, reset: false });
+ScrollReveal().reveal('.hire-description', { delay: 400 });
+ScrollReveal().reveal('.fa-brands', { origin: 'bottom', delay: 600, interval: 150, distance: '40px' });
+ScrollReveal().reveal('.h1-head,.h6-head,.header-img', {reset: true});
 
 
 //mode  light dark
