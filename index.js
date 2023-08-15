@@ -78,30 +78,18 @@ setInterval(textLoad, 4500);
 //skill animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            observer.unobserve(entry.target);
-            var percentVal = 0;
-            var finalVal = parseInt(entry.target.getAttribute('aria-valuenow'));
-            // console.log(percentVal);
+        if (entry.isIntersecting) {  
 
-            setInterval(function () {
-                if (percentVal < finalVal) {
-                    percentVal += 0.5;
-                    entry.target.style.width = percentVal + '%';
-                    entry.target.setAttribute('aria-valuenow', percentVal);
-                }
-            }, 0.1);
+            entry.target.classList.remove('hp') 
+
+        } else {
+            entry.target.classList.add('hp') 
         }
-
     });
-}, {
-    root: null,
-    rootMargin: '0px',
-    threshold: 1
 });
 
-const targets = document.querySelectorAll('.progress-bar');
-targets.forEach(target => observer.observe(target));
+const progressBars = document.querySelectorAll('.progress-bar');
+progressBars.forEach(el=>observer.observe(el));
 
 
 //scroll animation
@@ -163,4 +151,3 @@ function changeTheme() {
         icn.classList.replace("fa-sun", "fa-moon");
     }
 }
-
