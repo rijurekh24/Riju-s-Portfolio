@@ -23,6 +23,8 @@ html::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
+
+/* navbar */
 .navbar {
 
     background: transparent;
@@ -55,7 +57,7 @@ html::-webkit-scrollbar-track {
     float: right;
 }
 
-/* .nav-item a.active, */
+
 .nav-item a:hover {
     color: #48B14D !important;
 
@@ -77,13 +79,13 @@ html::-webkit-scrollbar-track {
         backdrop-filter: blur(3px);
     }
 
-    .theme{
+    .theme {
         margin-top: 2.5%;
     }
 
-    .fa-moon{
+    .fa-moon {
         color: #808080 !important;
-        
+
     }
 }
 
@@ -102,6 +104,8 @@ html::-webkit-scrollbar-track {
     box-shadow: none !important;
 }
 
+
+/* intro  */
 .intro {
     height: 100vh;
     background-image: url(https://images.unsplash.com/photo-1506452305024-9d3f02d1c9b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
@@ -173,18 +177,33 @@ html::-webkit-scrollbar-track {
     background-color: #F2F2F2;
 }
 
+
+/* skill section */
 .progress {
+    width: 100%;
     height: 6px !important;
     background-color: rgb(104, 104, 104) !important;
+
+
 }
 
 .progress-bar {
+    width: 0%;
+    position: relative;
+    height: 100%;
     background-color: #48B14D !important;
+    transition: 1.5s all !important;
+    opacity: 1 !important;
+}
+
+.hp {
+    transition: 1.5s all;
+    opacity: 0;
+    width: 0 !important;
 }
 
 
-
-
+/* project section */
 .prjct {
 
     background-color: black;
@@ -259,6 +278,8 @@ html::-webkit-scrollbar-track {
 
 }
 
+
+/* gallery */
 .gallery img {
     width: 60%;
 }
@@ -288,21 +309,21 @@ html::-webkit-scrollbar-track {
 
 
 /* form focus off */
-textarea:focus, 
-textarea.form-control:focus, 
-input.form-control:focus, 
-input[type=text]:focus, 
-input[type=password]:focus, 
-input[type=email]:focus, 
-input[type=number]:focus, 
-[type=text].form-control:focus, 
-[type=password].form-control:focus, 
-[type=email].form-control:focus, 
-[type=tel].form-control:focus, 
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
 [contenteditable].form-control:focus {
-  box-shadow: none !important;
-  outline: none !important;
-  border-color:#eee !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #eee !important;
 }
 
 
