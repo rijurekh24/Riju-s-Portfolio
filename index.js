@@ -62,17 +62,19 @@ document.addEventListener("scroll", () => {
 const text = document.querySelector(".multiple-text");
 const textLoad = () => {
     setTimeout(() => {
-        text.textContent = "Front-end Web Developer";
+       
+        text.textContent = "UI/UX Designer";
     }, 0);
     setTimeout(() => {
-        text.textContent = "UI/UX Designer";
+        text.textContent = "Photographer";
     }, 1500);
     setTimeout(() => {
-        text.textContent = "Photographer";
-    }, 3000);
+        text.textContent = "Front-end Web Developer";
+        
+    }, 3100);
 }
 textLoad();
-setInterval(textLoad, 4500);
+setInterval(textLoad, 4600);
 
 
 //skill animation
