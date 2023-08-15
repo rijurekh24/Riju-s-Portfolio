@@ -98,8 +98,8 @@ ScrollReveal({
     reset: true,
     distance: '95px',
     duration: 1500,
-    delay: 3050,
-    useDelay:'onload'
+    delay: 250,
+    
 });
 
 
@@ -113,8 +113,8 @@ ScrollReveal().reveal('.prjct', { scale: 0.5, duration: 1500, interval: 200 });
 ScrollReveal().reveal('.srvc', { interval: 150 });
 
 ScrollReveal().reveal('.hire-description', { delay: 400 });
-ScrollReveal().reveal('.fa-brands', { origin: 'bottom', delay: 600, interval: 150, distance: '40px' });
-ScrollReveal().reveal('.h1-head,.h6-head,.header-img', {reset: false});
+ScrollReveal().reveal('.fa-brands', { origin: 'bottom', delay: 500, interval: 150, distance: '35px' });
+ScrollReveal().reveal('.h1-head,.h6-head,.header-img', {delay:3050,reset: true ,useDelay:'onload'});
 
 
 //mode  light dark
