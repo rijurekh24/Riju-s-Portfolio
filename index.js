@@ -6,7 +6,7 @@ $(window).on('load', function () {
 
     setTimeout(function () {
         $('.slide').addClass('slide-deactivate');
-    }, 2950);
+    }, 2900);
 });
 
 //entry preloader text
