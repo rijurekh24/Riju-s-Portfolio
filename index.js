@@ -1,3 +1,5 @@
+
+
 //preloader animation
 $(window).on('load', function () {
     setTimeout(function () {
@@ -7,6 +9,8 @@ $(window).on('load', function () {
     setTimeout(function () {
         $('.slide').addClass('slide-deactivate');
     }, 2950);
+
+    
 });
 
 //entry preloader text
@@ -99,7 +103,7 @@ ScrollReveal({
     distance: '95px',
     duration: 1500,
     delay: 250,
-    
+    viewFactor: 0.15
 });
 
 
@@ -114,7 +118,7 @@ ScrollReveal().reveal('.srvc', { interval: 150 });
 
 ScrollReveal().reveal('.hire-description', { delay: 400 });
 ScrollReveal().reveal('.fa-brands', { origin: 'bottom', delay: 500, interval: 150, distance: '35px' });
-ScrollReveal().reveal('.h1-head,.h6-head,.header-img', {delay:3100,reset: true ,useDelay:'onload'});
+ScrollReveal().reveal('.h1-head,.h6-head,.header-img', {delay:3050,reset: true ,useDelay:'onload'});
 
 
 //mode  light dark
