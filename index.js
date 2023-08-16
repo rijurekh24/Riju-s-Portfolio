@@ -1,5 +1,3 @@
-
-
 //preloader animation
 $(window).on('load', function () {
     setTimeout(function () {
@@ -9,8 +7,6 @@ $(window).on('load', function () {
     setTimeout(function () {
         $('.slide').addClass('slide-deactivate');
     }, 2950);
-
-    
 });
 
 //entry preloader text
@@ -32,10 +28,9 @@ const entrytextLoad = () => {
 
 }
 entrytextLoad();
-// setInterval(entrytextLoad, 4500);
+
 
 //hamburger sign
-
 let btn = document.querySelector('.navbar-toggler');
 let icon = btn.querySelector('.fa-bars');
 
@@ -66,7 +61,7 @@ document.addEventListener("scroll", () => {
 const text = document.querySelector(".multiple-text");
 const textLoad = () => {
     setTimeout(() => {
-       
+
         text.textContent = "UI/UX Designer";
     }, 0);
     setTimeout(() => {
@@ -74,7 +69,7 @@ const textLoad = () => {
     }, 1500);
     setTimeout(() => {
         text.textContent = "Front-end Web Developer";
-        
+
     }, 3100);
 }
 textLoad();
@@ -84,18 +79,18 @@ setInterval(textLoad, 4600);
 //skill animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {  
+        if (entry.isIntersecting) {
 
-            entry.target.classList.remove('hp') 
+            entry.target.classList.remove('hp')
 
         } else {
-            entry.target.classList.add('hp') 
+            entry.target.classList.add('hp')
         }
     });
 });
 
 const progressBars = document.querySelectorAll('.progress-bar');
-progressBars.forEach(el=>observer.observe(el));
+progressBars.forEach(el => observer.observe(el));
 
 //scroll animation
 ScrollReveal({
@@ -118,7 +113,7 @@ ScrollReveal().reveal('.srvc', { interval: 150 });
 
 ScrollReveal().reveal('.hire-description', { delay: 400 });
 ScrollReveal().reveal('.fa-brands', { origin: 'bottom', delay: 500, interval: 150, distance: '35px' });
-ScrollReveal().reveal('.h1-head,.h6-head,.header-img', {delay:3050,reset: true ,useDelay:'onload'});
+ScrollReveal().reveal('.h1-head,.h6-head,.header-img', { delay: 3050, reset: true, useDelay: 'onload' });
 
 
 //mode  light dark
@@ -134,7 +129,7 @@ var projects = document.querySelector('#projects');
 var contact = document.querySelector('#contact');
 var theme = document.querySelector('.theme');
 var icn = theme.querySelector('.fa-moon');
-const audio=new Audio();
+const audio = new Audio();
 
 function changeTheme() {
     navbar.classList.toggle('dark');
@@ -147,9 +142,9 @@ function changeTheme() {
     services.classList.toggle('dark2')
     projects.classList.toggle('dark2')
     contact.classList.toggle('dark2')
-    
-    audio.src="click.wav ";
-    
+
+    audio.src = "click.wav ";
+
     if (icn.classList.contains("fa-moon")) {
         icn.classList.replace("fa-moon", "fa-sun");
     }
