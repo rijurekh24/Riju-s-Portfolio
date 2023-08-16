@@ -88,11 +88,13 @@ html::-webkit-scrollbar-track {
 
     }
 
-    
-.gallery::-webkit-scrollbar {
-    height: 5px !important;
-}
+    .gallery::-webkit-scrollbar {
+        height: 5px !important;
+    }
 
+    .horizontal-gallery {
+        margin-top: 4% !important;
+    }
 
 }
 
@@ -316,6 +318,11 @@ html::-webkit-scrollbar-track {
 
 .gallery .horizontal-gallery {
     display: inline;
+}
+
+
+.potrait {
+    width: 33.75% !important;
 }
 
 #education h2,
